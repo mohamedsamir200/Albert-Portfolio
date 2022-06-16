@@ -1,0 +1,244 @@
+
+.main-color
+{
+    color: #e65f78;
+}
+
+:root{
+   --mainComlor:#e65f78;
+   scroll-behavior: smooth;
+}
+
+/* ***** navbar ***** */
+nav .nav-item .nav-link{
+    margin-left: 15px;
+}
+.navbar-light .navbar-nav .nav-link.active{
+    color: var(--mainComlor);
+}
+.navbar-light .navbar-nav .nav-link,.nav-icon a{
+    color: white;
+}
+.navbar-light .navbar-nav .nav-link:hover,.nav-icon a:hover{
+    color: var(--mainComlor);
+}
+.navbar-light .navbar-nav .nav-link:focus{
+    color: var(--mainComlor);
+}
+.navbar-light .navbar-toggler{
+    color: #000 !important;
+}
+.navbar-toggler{
+    background-color: white;
+}
+
+/* ***** navbar ***** */
+
+/* ****** header *********** */
+header{
+    background-image: url(../images/1.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+.header-layer{
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.header-img img{
+    width: 200px;
+    border: 10px solid rgba(255,255,255,.08);
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+.layer-caption h4::after{
+    content: "|";
+    animation: typing 6s infinite ;
+}
+@keyframes typing{
+    0%{content:"p |"}
+    5%{content:"ph | "}
+    10%{content:"pho |"}
+    15%{content:" phot|"}
+    20%{content:"photo |"}
+    25%{content:"photog |"}
+    30%{content:"photogr |"}
+    35%{content:"photogra |"}
+    40%{content:"photograp |"}
+   45%{content:"photograph | "}
+    50%{content:" photographer |"}
+   55%{content:" photographer | "}
+    60%{content:"F  |"}
+    65%{content:"Fr  |"}
+    70%{content:"Fre  |"}
+    75%{content:"Free  |"}
+    80%{content:"Frel  |"}
+    85%{content:"Frela  |"}
+    90%{content:"Frelancer  |"}
+    95%{content:"Freelancer |"}
+    100%{content:"Freelancer |"}
+
+}
+.header-icon{
+    bottom: 0;
+    left: 50%;
+    transform: translatex(-50%);
+    animation: move 0.5s infinite alternate;
+}
+@keyframes move{
+    0%{ bottom: 0;}
+    20%{ bottom: 2%;}
+    40%{ bottom: 4%;}
+    60%{ bottom: 6%;}
+    80%{ bottom: 8;}
+    100%{ bottom: 10%;}
+}
+.setting-icon{
+    top: 25%;
+    background-color: #000000;
+    z-index: 999;
+}
+/* ****** header *********** */
+/* ** section About ** */
+
+
+.left-side .brdr{
+    border: 10px solid black;
+}
+.inner{
+    transform: translate(-8%,-8%);
+}
+#About li{
+    list-style: none;
+    margin: 12px 0px;
+    line-height: 30px;
+}
+ul{
+    padding-left: 0;
+}
+.btn{
+    background-color: var(--mainComlor);
+    color: white;
+}
+.btn:hover{
+    color: white;
+}
+#About h3 span::after{
+    content: "";
+    animation: moving 10s infinite;
+}
+@keyframes moving {
+    0%{content:"P"}
+    5%{content:"Ph"}
+    10%{content:"Pho"}
+    15%{content:"Phot"}
+    20%{content:"Photo"}
+    25%{content:"Photog"}
+    30%{content:"Photogr"}
+    35%{content:"Photogra"}
+    40%{content:"Photograp"}
+   45%{content:"Photographer"}
+    50%{content:"Photographer"}
+   55%{content:"F"}
+    60%{content:"Fr"}
+    65%{content:"Fre"}
+    70%{content:"Free"}
+    75%{content:"Freel"}
+    80%{content:"Freela"}
+    85%{content:"Freelan"}
+    90%{content:"Freelanc"}
+    95%{content:"Freelancer"}
+    100%{content:"Freelancer"}
+
+}
+/* ** section About ** */
+
+/* ** section services */
+.bg-light{
+    background-color: #f8f9fa;
+} 
+
+/* ** section services */
+
+
+/* *** section porfolio */
+.nav-pills .nav-link{
+    color: #000000;
+}
+.nav-pills .nav-link.active{
+    color: var(--mainComlor);
+    background-color: transparent;
+}
+.portfolio-img{
+    overflow: hidden;
+}
+.portfolio-img img{
+    transition: all 0.5s;
+}
+
+.portfolio-img:hover img{
+    transform: scale(1.2);
+}
+#portfolio .nav-link{
+    padding: 0px 10px;
+}
+/* *** section porfolio */
+
+
+/* ************** */
+.counter{
+    background-image: url(../images/550x650.jpg);
+    height: auto;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin: 80px 0px;
+    padding: 20px;
+}
+.counter::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url(../images/ravenna.png);
+    opacity: .4;
+}
+
+/* ************** */
+
+/* <!-- *** section news *** --> */
+
+.news-content img{
+    transition: all 0.5s;   
+}
+.news-content:hover img{
+    transform: scale(1.1) rotate(5deg);
+}
+.news-content:hover h4{
+    color: var(--mainComlor);
+}
+/* <!-- *** section news *** --> */
+
+/* <!-- *** section contact *** --> */
+#Content p{
+    width: 40%;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+/* <!-- *** section contact *** --> */
+
+/* ** footer ** */
+.footer{
+    padding: 80px 0px;
+}
+.footer-icon .fa-brands{
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+
+
+
+
